@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-family: "Microsoft JhengHei";
+}
+header{
+    width: 100%;
+    color: $white;
+    background: url(../img/header_desktop.png) no-repeat center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    nav{
+        background: rgba(0, 0, 0, 0.75);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2.6rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        h1{
+            display: block;
+            background: url(../img/logo_w.png) no-repeat;
+            background: url(../img/logo_w@svg.svg) no-repeat;
+            width: 12%;
+            height: 1.5rem;
+            background-size: contain;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 1rem;
+                    padding: 0 0.9rem;
+                    white-space: nowrap;
+                }
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+    .picture-text {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.35);
+        padding: 1.25rem;
+        h2 {
+            font-size: 2.25rem;
+            line-height: 3rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.3rem;
+            .icon {
+                margin: 0 0.1rem;
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.4rem 2.7rem;
+    background-color: $light-brown;
+    .footer-section {
+        flex: 1;
+        color: $brown;
+        h3 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+        }
+        p, ul, li {
+            font-size: 1rem;
+            line-height: 1.3rem;
+            list-style: disc;
+        }
+        ul{
+            margin-left: 1.25rem;
+        }
+    }
+    .social-media{
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
+        flex-direction: column;
+        h1{
+            display: inline-block;
+            background: url(../img/logo_l.png) no-repeat right;
+            background: url(../img/logo_l@svg.svg) no-repeat right;
+            width: 72%;
+            height: 3rem;
+            background-size: contain;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 1.4rem;
+        }
+        .social-icon{
+            display: inline-block;
+        }
+        i {
+            margin-left: 0.75rem;
+            font-size: 2.25rem;
+        }
+        .fa-square-google-plus{
+            color: #db4437;
+        }
+        .fa-square-twitter{
+            color: #41abe1;
+        }
+        .fa-square-facebook{
+            color: #3a5795;
+        }
+    }
+}
