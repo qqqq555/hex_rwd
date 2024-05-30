@@ -861,4 +861,28 @@ footer .social-media .fa-square-facebook {
 }
 .form .login a:hover, .form .register a:hover {
   text-decoration: underline;
+}
+.form .register-flex {
+  display: flex;
+  flex-direction: row;
+}
+.form .register-flex p {
+  flex: 1;
+  text-align: left;
+}
+.form .register-flex form {
+  flex: 1;
+}
+.form .register-flex form button {
+  padding: 0.375rem 3rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: none;
+  color: #ffffff;
+  background-color: #f56c23;
+}
+.form .register-flex form button:hover {
+  background-color: #db530a;
 }/*# sourceMappingURL=all.css.map */
