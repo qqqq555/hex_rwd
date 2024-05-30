@@ -17,6 +17,9 @@
     <header>
         <nav>
             <h1><a href="/">六角西餐廳</a></h1>
+            <div class="menu-toggle">
+                <span></span>
+            </div>
             <ul>
                 <li><a href="#">特色</a></li>
                 <li><a href="#">主廚</a></li>
@@ -30,7 +33,46 @@
         </div>
         </div>
     </header>
-    DIV
+    <div class="form">
+        <h1><a href="/">六角西餐廳</a></h1>
+        <h2>享受美食好味道</h2>
+        <div class="login active-form">
+            <div class="login-form">
+                <h3>LOGIN</h3>
+                <form action="#" method="POST">
+                        <label for="email">Email Address*</label>
+                        <div class="input-with-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <label for="password">Password*</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    <a href="#">忘記密碼?</a>
+                    <div class="form-actions">
+                        <button type="button" class="to-register">註冊</button>
+                        <button type="submit" class="submit">登入</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="register">
+            <h2>REGISTER</h2>
+            <p>就是這樣條款：<br>就是這樣條款：
+                Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien...</p>
+            <form action="#" method="POST">
+                    <label>Email Address*</label>
+                    <input type="email" required>
+                    <label>Password*</label>
+                    <input type="password" required>
+                <a href="#" class="to-login">已經有帳號了？</a>
+                <button type="submit" class="btn">註冊</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <div class="footer-section">
             <h3>關於 六角西餐廳</h3>
@@ -53,6 +95,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="https://kit.fontawesome.com/934c12ab23.js" crossorigin="anonymous"></script>
+    <script src="./js/all.js"></script>
 </body>
 </html>

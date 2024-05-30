@@ -57,6 +57,20 @@
         }
     }
 }
+@include large_phone(){
+    .yummy-secret {
+        h3 {
+            &::before, &::after {
+                display: none; 
+            }
+        }
+        .secrets-container {
+            flex-direction: column;
+            max-width: none;
+
+        }
+    }
+}
 .chef {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +101,22 @@
         h4, p {
             font-size: 1rem;
             line-height: 1.3rem;
+        }
+    }
+}
+@include large_phone(){
+    .chef {
+        overflow-x: hidden;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        .chef-image {
+            img {
+                width: 100vw;
+            }
+        }
+        .chef-description {
+            padding: 1.875rem 2rem;
         }
     }
 }
@@ -130,6 +160,15 @@
         }
     }
 }
+@include large_phone(){
+    .comments {
+        padding: 3.125rem 0.625rem;
+        width: 100%;
+        .comments-container {
+            flex-direction: column;
+        }
+    }
+}
 .reserve {
     text-align: center;
     padding: 3.1rem 2.6rem;
@@ -143,7 +182,7 @@
     .reserve-container {
         display: flex;
         justify-content: space-around;
-        .img {
+        img {
             flex: 1;
             height: auto;
             display: block;
@@ -212,4 +251,23 @@
             }
         }
     }
+}
+@include large_phone(){
+    .reserve{
+        padding: 3.125rem 0.625rem;
+        h3{
+            margin-bottom: 1.875rem;
+        }
+        .reserve-container {
+            flex-direction: column;
+            img {
+                max-width: 100%;
+                margin-bottom: 1.875rem;
+            }
+            .form-container {
+                margin: 0;
+            }
+        }
+    }
+     
 }

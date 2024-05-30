@@ -57,6 +57,7 @@ header{
             font-size: 2.25rem;
             line-height: 3rem;
             margin-bottom: 1rem;
+            display: inline;
         }
         p {
             font-size: 1rem;
@@ -122,5 +123,89 @@ footer {
         .fa-square-facebook{
             color: #3a5795;
         }
+    }
+}
+@include large_phone(){
+    header{
+        background: url(../img/header_mobile.png) no-repeat center top;
+        background-size: cover;
+        nav{
+            padding: 1rem 0.875rem;
+            h1{
+                width: 5.9rem;
+            }
+            .menu-toggle {
+                display: block;
+                width: 30px;
+                height: 30px;
+                position: relative;
+                cursor: pointer;
+
+                span, &::before, &::after {
+                    background-color: $white;
+                    position: absolute;
+                    height: 3px;
+                    width: 100%;
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 3px;
+                }
+
+                span {
+                    top: 50%;
+                }
+
+                &::before {
+                    content: '';
+                    top: 25%;
+                }
+
+                &::after {
+                    content: '';
+                    top: 75%; 
+                }
+            }
+
+            ul {
+                display: none;
+                flex-direction: column;
+                background: rgba(0, 0, 0, 0.75);
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                z-index: 1000;
+
+                li {
+                    text-align: center;
+                    padding: 0.75rem;
+
+                    a {
+                        color: $white;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+        .picture-text{
+            h2{
+                display: block;
+            }
+        }
+    }
+    footer {
+        flex-direction: column;
+        padding: 3.125rem 0.7rem; 
+        .footer-section {
+            text-align: left;
+            margin-bottom: 1.875rem;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+    nav ul {
+        display: flex !important;
     }
 }
